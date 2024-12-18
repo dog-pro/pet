@@ -1,0 +1,1598 @@
+@charset "utf-8";
+
+body {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(../images/background1.jpg);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  text-align: center;
+  padding: 40px 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+header nav a,
+footer,
+small,
+table,
+textarea,
+td label,
+input,
+select {
+  color: #4e4e4e;
+  color: #4e4e4e;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  line-height: 40px;
+  font-size: 25px;
+  font-weight: 700;
+  background-image: url(../images/header/header_icon.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+  padding-left: 45px;
+}
+
+h1 a {
+  display: block;
+  text-decoration: none;
+}
+
+h2 {
+  display: inline-block;
+  text-align: center;
+  font-size: 4rem;
+  border-bottom: 5px solid #6f8d1b;
+  line-height: 1.5;
+  margin-bottom: 7rem;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.h3_icon {
+  display: inline-block;
+  padding-left: 45px;
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.h3_icon::after {
+  content: "";
+  background-size: 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  margin-left: 10px;
+}
+
+.h3_border {
+  border-bottom: #ff9aeb 5px dotted;
+}
+
+h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+/* .float
+------------------------------*/
+
+.float_content {
+  margin-top: 20px;
+  padding: 45px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.float_left {
+  float: left;
+  margin-right: 50px;
+}
+
+.float_right {
+  float: right;
+  margin-left: 50px;
+}
+
+.float_cover img {
+  width: 50%;
+  border-radius: 30px;
+}
+
+/* .wrapper
+------------------------------*/
+.wrapper {
+  position: sticky;
+  width: 100%;
+  max-width: 1280px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+/* .header
+------------------------------*/
+header {
+  justify-content: space-between;
+  position: relative;
+}
+
+.header_top {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_topMiddle {
+  position: relative;
+}
+
+.header_topMiddle p {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.contact_button:hover {
+  opacity: 0.7;
+}
+
+.contact_button p {
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  padding: 10px 10px 10px 60px;
+
+  background-color: #528852;
+  color: #fff;
+
+  line-height: 40px;
+  font-size: 17px;
+  font-weight: 900;
+  background-image: url(../images/header/contactButton_icon.png);
+  background-size: 38px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+/* .nav
+------------------------------*/
+.header_local {
+  background-color: #90ee90;
+}
+
+nav {
+  line-height: 40px;
+}
+
+nav ul {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  border-top: 3px dotted rgb(126, 126, 126);
+}
+
+nav li:last-child a {
+  border-right: none;
+}
+
+nav li a {
+  display: block;
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-decoration: none;
+  border-right: 2px #4e4e4e solid;
+  padding: 0 20px;
+}
+
+nav li a:hover span {
+  color: #ff5503de;
+  border-bottom: 2px solid #ff5503de;
+}
+
+/* visual_img
+------------------------------*/
+.headerImage {
+  height: 450px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headerImage p {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5;
+  text-shadow: 0 0 20px #000, 0 0 20px #000, 0 0 20px #000, 0 0 20px #000,
+    0 0 20px #000;
+}
+
+.topPage_img {
+  background-image: url(../images/topPage/main_image.jpg);
+}
+
+.philosophy_img {
+  background-image: url(../images/philosophy/philosophy_image.jpg);
+}
+
+.about_img {
+  background-image: url(../images/about/about_image.jpg);
+}
+
+.business_img {
+  background-image: url(../images/business/business_image.jpg);
+}
+
+.recruit_img {
+  background-image: url(../images/recruit/recruit_image.jpg);
+}
+
+.newInfo_img {
+  background-image: url(../images/newInfo/newInfo_image.jpg);
+}
+
+.access_img {
+  background-image: url(../images/accsess/access_image.jpg);
+}
+
+.contact_img {
+  background-image: url(../images/contact/contact_image.jpg);
+}
+
+/* main
+------------------------------*/
+main {
+  position: relative;
+}
+
+/* about
+------------------------------*/
+.about {
+  position: relative;
+  background-color: #f3f9ea;
+  line-height: 2.5;
+  border-radius: 90px 0 90px 0;
+}
+
+.about_photo {
+  width: 470px;
+  height: 280px;
+}
+
+/* business
+------------------------------*/
+.business_list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 40px;
+}
+
+.business_list li {
+  width: 26%;
+  text-align: center;
+  margin: 0 20px 20px 0;
+  padding: 20px;
+  color: #4e4e4e;
+  border: 3px solid #aaa;
+}
+
+.business img {
+  width: 100%;
+  height: 160px;
+}
+
+.business_list li h3 {
+  margin: 15px 0;
+}
+
+.business_list li P {
+  text-align: justify;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+/* info
+------------------------------*/
+.info {
+  position: relative;
+  align-items: center;
+  background-color: #f3f9ea;
+  padding: 30px;
+}
+
+.sns {
+  width: 240px;
+  display: flex;
+  margin: 0 auto 50px;
+}
+
+.sns p {
+  margin: 0 20px;
+}
+
+.sns p a {
+  display: block;
+}
+
+.sns p a:hover {
+  opacity: 0.7;
+}
+
+.sns p a img {
+  width: 40px;
+  height: 40px;
+}
+
+.info ul {
+  width: 670px;
+  margin: 40px auto;
+  padding: 0 30px;
+  height: 300px;
+  text-align: left;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.info ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+.info ul::-webkit-scrollbar-track {
+  background-color: #e5e5e5;
+  border-radius: 5px;
+}
+
+.info ul::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 5px;
+}
+
+.info ul li {
+  display: flex;
+  list-style: none;
+  padding: 8px 0;
+  line-height: 2;
+  border-bottom: #aaa 1px solid;
+}
+
+.info ul li a {
+  display: block;
+  text-decoration-line: none;
+  color: #5d7dbf;
+  letter-spacing: 0.2em;
+}
+
+.info ul li a:hover {
+  opacity: 0.5;
+}
+
+.info ul li a p:first-child {
+  margin-right: 20px;
+}
+
+/* support
+------------------------------*/
+.support ul li {
+  margin: 30px 0;
+  align-items: flex-start;
+}
+
+.support img {
+  width: 40%;
+  height: 320px;
+  margin: 0px 20px;
+  border-radius: 30px;
+}
+
+.support ul li p {
+  line-height: 1.5;
+  margin: 20px 0px;
+  text-align: left;
+}
+
+/* company
+------------------------------*/
+.company {
+  background-color: #f3f9ea;
+}
+
+table tr td:first-child {
+  margin-right: 100px;
+}
+
+tr {
+  line-height: 1.5;
+}
+
+table {
+  margin-bottom: 50px;
+}
+
+td {
+  font-size: 1.7rem;
+}
+
+.company ul li {
+  text-align: left;
+}
+
+.company ul li a {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+}
+
+.company ul li a p {
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+.company ul li a p:first-child {
+  margin-right: 10%;
+}
+
+.company table {
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+/* ------------------------------
+私たちの想い
+------------------------------*/
+.philosophy_top {
+  width: 810px;
+
+  margin: 0 auto;
+}
+
+.philosophy_top p{
+  text-align: left;
+}
+
+.philosophy_top::after{
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100px;
+  background-image: url(../images/philosophy/ivy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid_back {
+  background-image: url(../images/philosophy/grid_background.png);
+}
+
+.philosophy_top h3 {
+  margin: 40px 0;
+}
+
+.vision {
+  display: flex;
+  margin-top: 40px;
+}
+
+.vision_left {
+  width: 48%;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.vision ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.vision ul li {
+  width: 280px;
+  height: 180px;
+  margin: 5px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vision ul li:nth-child(1) {
+  background-image: url(../images/philosophy/vision1.jpg);
+}
+
+.vision ul li:nth-child(2) {
+  background-image: url(../images/philosophy/vision2.jpg);
+}
+
+.vision ul li:nth-child(3) {
+  background-image: url(../images/philosophy/vision3.jpg);
+}
+
+.vision ul li:nth-child(4) {
+  background-image: url(../images/philosophy/vision4.jpg);
+}
+
+.match {
+  background-color: #f3f9ea;
+}
+
+.match_flow {
+  display: flex;
+  padding: 50px 200px;
+  justify-content: space-between;
+}
+
+.match_flow img{
+  width: 150px;
+}
+
+.match_flow ul li {
+  width: 330px;
+  background-color: #eeeeee;
+  border-radius: 30px;
+  margin-bottom: 100px;
+  padding: 40px;
+  text-align: left;
+}
+
+.match_flow ul li p {
+  padding: 20px 0;
+}
+
+.match_flow_title {
+  font-weight: 700;
+  border-bottom: #4e4e4e 1px solid;
+}
+
+.match_flow ul span {
+  color: #09cdff;
+  font-size: 30px;
+}
+
+.intro_movie{
+  position: relative;
+}
+
+.startButton{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* ------------------------------
+会社概要
+------------------------------*/
+.company_top {
+  width: 810px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.company_top_cover {
+  position: relative;
+  margin-top: 30px;
+}
+
+.company_top img {
+  width: 800px;
+}
+
+.CEO_name {
+  position: absolute;
+  text-align: center;
+  bottom: -60px;
+  right: -30px;
+  padding: 40px;
+  font-size: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+}
+
+.company_top h3 {
+  margin: 100px 0 50px;
+}
+
+.company_top p {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.company_about {
+  background-color: #f3f9ea;
+}
+
+.company_about table {
+  margin: 0 auto;
+}
+
+.company_history table {
+  margin: 0 auto;
+}
+
+.csr {
+  background-color: #f3f9ea;
+}
+
+.csr_cover {
+  display: flex;
+  padding: 20px;
+}
+
+.csr_cover ul {
+  display: flex;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.csr_cover ul li {
+  width: 50%;
+}
+
+.csr_cover ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+.csr_cover p {
+  text-align: left;
+}
+
+.csr_left {
+  width: 50%;
+}
+
+.csr_right {
+  width: 50%;
+  height: 300px;
+  background-image: url(../images/about/csr_car.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.csr_img1 {
+  background-image: url(../images/about/csr_car.jpg);
+}
+
+.csr_img2 {
+  background-image: url(../images/about/solar.jpg);
+}
+
+.csr_img3 {
+  background-image: url(../images/about/paperless.jpg);
+}
+
+.company_organizationImg {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../images/about/chart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ------------------------------
+事業内容
+------------------------------*/
+
+.business_top p {
+  width: 920px;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.business_top img {
+  margin-top: 50px;
+}
+
+.subtitle {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.h3_border_aqua {
+  border-bottom: #34bde7 5px dotted;
+}
+
+.h3_border_orange {
+  border-bottom: #e19558 5px dotted;
+}
+
+.h3_border_red {
+  border-bottom: #e95050 5px dotted;
+}
+
+.h3_border_gray {
+  border-bottom: #4e4e4e 5px dotted;
+}
+
+.scissors_icon {
+  background-image: url(../images/business/scissors_icon.png);
+}
+
+.scissors_icon::after {
+  background-image: url(../images/business/scissors_icon.png);
+}
+
+.shop_icon {
+  background-image: url(../images/business/shop_icon.png);
+}
+
+.shop_icon::after {
+  background-image: url(../images/business/shop_icon.png);
+}
+
+.animal_hospital_icon {
+  background-image: url(../images/business/animal_hospital.png);
+}
+
+.animal_hospital_icon::after {
+  background-image: url(../images/business/animal_hospital.png);
+}
+
+.petshop {
+}
+
+.petshop ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.petshop ul li {
+  width: calc((100% - 30px) / 3);
+  margin: 0 15px;
+  box-shadow: 10px 10px #4e4e4e;
+  padding: 20px;
+  background-color: #f3f9ea;
+}
+
+.petshop ul li {
+
+}
+
+.petshop img {
+  width: 100%;
+  height: auto;
+}
+
+.petshop ul li p {
+  text-align: justify;
+}
+
+.other {
+  width: 100%;
+  background-image: url(../images/business/other_object.png);
+  background-position: top center;
+  background-size: 15%;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+.other p {
+  text-align: justify;
+  padding: 0 190px;
+  line-height: 2;
+}
+
+/* ------------------------------
+採用情報
+------------------------------*/
+.recruit_sec1 {
+  background-color: #f3f9ea;
+}
+
+.recruit_sec2::before {
+  content: "";
+  width: 100%;
+  height: auto;
+  background-image: url(../images/recruit/wave_background2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recruit_sec1 h2 {
+  color: #6f8d1b;
+  border-bottom: none;
+}
+
+.recruit_sec2{
+}
+
+.recruit_sec2 ul{
+  display: flex;
+}
+
+.recruit_sec2 ul li{
+  width: calc(100% / 3);
+  height: 300px;
+  margin: 0 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recruit_sec2 ul li:hover{
+  opacity: 0.7;
+}
+
+
+.recruit_sec2 ul li:nth-child(1){
+  background-image: url(../images/recruit/sec2/newcomer.jpg);
+}
+
+.recruit_sec2 ul li:nth-child(2){
+  background-image: url(../images/recruit/sec2/internship.jpg);
+}
+
+.recruit_sec2 ul li:nth-child(3){
+  background-image: url(../images/recruit/sec2/wheelchair.jpg);
+}
+
+.recruit_sec2 ul li p{
+  width: 80%;
+background-color: #6F8D1B;
+color: #fff;
+padding: 20px;
+margin-top: 200px;
+opacity: 0.7;
+}
+
+.h3_left {
+  display: block;
+  text-align: left;
+}
+
+.job ul {
+  display: flex;
+  margin-bottom: 40px;
+  padding: 0 40px;
+}
+
+.job ul li {
+  position: relative;
+  width: calc(100% / 3);
+  text-align: center;
+  margin-right: 40px;
+  padding: 30px;
+}
+
+.job ul li img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.job ul li:last-child {
+  margin: 0;
+}
+
+.job ul li p {
+  line-height: 1.5;
+  text-align: justify;
+  margin: 20px 0 85px;
+}
+
+.job_back{
+  background-color: #F3F9EA;
+  border-radius: 10px;
+}
+
+.recruit_message{
+  display: flex;
+}
+
+.recruit_message p{
+text-align: justify;
+border: #4e4e4e 3px dashed;
+padding: 50px;
+}
+
+.interview{
+  position: relative;
+  background-color: #D5D5D5;
+}
+
+.interview ul{
+  display: flex;
+}
+
+.slideButton{
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #ffF;
+  color: #4e4e4e;
+  border-radius: 50%;
+  font-size: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 3;
+}
+
+.slideButton_left{
+  content: "＜";
+  left: 2.5%;
+}
+
+.slideButton_right{
+  content: "＞";
+  right: 2.5%;
+}
+
+.slideButton:hover{
+  opacity: 0.7;
+}
+
+
+.interview ul li{
+  width: calc(100% / 5);
+  height: 350px;
+  margin: 0 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  transition: transform .6s ease;
+  cursor: pointer;
+}
+
+.interview ul li:hover{
+  transform: scale(1.1);
+}
+
+.interview ul li:nth-child(1){
+  background-image: url(../images/recruit/interview/chief.jpg);
+}
+.interview ul li:nth-child(2){
+  background-image: url(../images/recruit/interview/manager.jpg);
+}
+.interview ul li:nth-child(3){
+  background-image: url(../images/recruit/interview/trading.jpg);
+}
+.interview ul li:nth-child(4){
+  background-image: url(../images/recruit/interview/accounting.jpg);
+}
+.interview ul li:nth-child(5){
+  background-image: url(../images/recruit/interview/animal_doctor.jpg);
+}
+
+
+.interview_background{
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 75px;
+  transform: skewY(-7deg) translateY(90px);
+  z-index: 1;
+  background-color: #fff;
+  opacity: 0.7;
+cursor: pointer;
+}
+
+.interview_position{
+background-color: #6F8D1B;
+color: #fff;
+padding: 5px;
+opacity: 0.7;
+}
+
+.interview_content{
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.interview_content p{
+  text-align: justify;
+  font-size: 1.4rem;
+  color: #000;
+  padding: 0 15px;
+}
+
+.entering_date{
+  background-color: #fff;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.interview_slide{
+  text-align: center;
+  padding-top: 60px;
+}
+
+.interview_slide span{
+  display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 10px;
+margin: 0 5px;
+background-color: #ababab;
+cursor: pointer;
+}
+
+.interview_slide span:first-child{
+background-color: #656565;
+}
+
+.recruit_info ul{
+  width: 1000px;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.recruit_info ul li{
+  padding: 10px 0;
+}
+
+.recruit_info ul li a{
+  display: flex;
+  text-align: left;
+}
+
+.recruit_info ul li{
+  border-bottom: 1px #4e4e4e solid;
+}
+
+.recruit_info ul li:hover{
+  opacity: 0.7;
+}
+
+.recruit_info_tag{
+  background-color: #000;
+  color: #fff;
+  padding: 0 30px;
+  margin: 0 40px;
+}
+
+.recruit_info_list{
+  width: 200px;
+  height: 50px;
+  margin: 40px auto 0;
+  cursor: pointer;
+}
+
+.recruit_info_list p{
+  padding: 10px;
+  border: #4e4e4e 1px solid;
+align-items: center;
+}
+
+.recruit_info_list p::after{
+content: "＞";
+padding-left:20px;
+}
+
+.recruit_info_list p:hover{
+  opacity: 0.7;
+}
+
+.recruit_info_list p:hover::after{
+  content: "→";
+}
+
+/* ------------------------------
+お問い合わせ
+------------------------------*/
+.contact_description {
+  text-align: left;
+  margin: 40px;
+}
+
+.description_caution {
+  color: red;
+  margin-top: 10px;
+}
+
+.contact_cover {
+  background: linear-gradient(to bottom, #f3f9ea, #caf18a);
+  padding: 40px 0;
+}
+
+#contact_form {
+  padding: 0 40px;
+  margin-top: 40px;
+}
+
+#contact_form h2 {
+  margin: 30px 0;
+  padding-left: 45px;
+
+  line-height: 40px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  background-image: url(../images/contact/dogStamp.svg);
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.contact .visual_img {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+}
+
+table {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+table th {
+  width: 250px;
+  font-size: 1.6rem;
+  text-align: left;
+  padding: 10px 0;
+}
+
+table td {
+  font-size: 1.6rem;
+  padding: 10px 20px;
+}
+
+/* form
+------------------------------*/
+form{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 1.6rem;
+  padding: 5px;
+}
+
+form span {
+  background-color: #f00;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-right: 5%;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
+.span_black {
+  background-color: #4e4e4e;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-right: 5%;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
+td label {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+input[type="text"] {
+  width: 150px;
+}
+
+input#mail {
+  margin-bottom: 10px;
+}
+
+select {
+  font-size: 1.6rem;
+  padding: 5px;
+}
+
+textarea {
+  font-size: 1.6rem;
+  width: 500px;
+  padding: 5px;
+  box-sizing: border-box;
+  resize: none;
+  vertical-align: bottom;
+}
+
+.send input {
+  width: 200px;
+}
+
+/* privacy
+------------------------------*/
+.privacy {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.privacy h3 {
+  text-align: center;
+  padding: 20px;
+}
+
+.privacy_content {
+  width: 720px;
+  height: 400px;
+  border: #000000 solid 1px;
+  overflow-x: scroll;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 20px; 
+}
+
+.confirm {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.send_btn {
+  text-align: center;
+  padding: 40px;
+}
+
+.policy_button {
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin: 0 20px;
+  box-shadow: #7f8681 2px 2px 2px;
+}
+
+.policy_button:hover {
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.reset {
+  background-color: #5d5c5c;
+}
+
+.send {
+  background-color: red;
+}
+
+/* maintenance
+------------------------------*/
+.maintenance {
+  width: 1280px;
+}
+
+.maintenance_cover p {
+  position: relative;
+  font-size: 45px;
+}
+
+.top_button {
+  margin: 0 auto;
+  width: 400px;
+  padding: 10px 0;
+  background-color: #528852;
+  border-radius: 70px;
+}
+
+.top_button:hover {
+  opacity: 0.7;
+}
+
+.top_button p {
+  color: #fff;
+}
+
+/* footer
+------------------------------*/
+.footer_cover {
+  border-top: #4e4e4e 3px dotted;
+  border-bottom: #4e4e4e 3px dotted;
+  align-items: center;
+  padding: 20px 40px 0;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_middle {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.footer_middle li{
+  width: 180px;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.footer_middle p {
+  background-color: #90ee90;
+  background: linear-gradient(to bottom, #f3f9ea, #bdff51);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.footer_middle a:hover {
+  color: #ff5503de;
+}
+
+footer .content {
+  align-items: end;
+}
+
+/* .address
+------------------------------*/
+address {
+  width: 50%;
+  font-size: 1.4rem;
+}
+
+address span {
+  letter-spacing: 0.1em;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 10px;
+}
+
+/* nav.local
+------------------------------*/
+.footer_local {
+  margin-top: 5px;
+}
+
+.footer_local ul li {
+  display: inline-block;
+  text-align: right;
+}
+
+.footer_local ul li a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.footer_local ul li a:hover {
+  color: #ff5503de;
+}
+
+/* small
+------------------------------*/
+small {
+  background-color: #90ee90;
+  display: block;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 4;
+}
+
+/* button
+------------------------------*/
+.button {
+  display: flex;
+  align-items: center;
+  margin: 50px auto 0;
+  width: 170px;
+  height: 50px;
+  background-color: #ed91ed;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-color: #fff 2px solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.button::after {
+  content: "＞";
+  position: absolute;
+  right: 7%;
+  top: center;
+  color: #fff;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+/* .support_button
+------------------------------*/
+.support_button {
+  margin: 0 auto;
+  padding: 10px 30px;
+  line-height: 4rem;
+  width: 80px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #f3f9ea, #caf18a);
+  color: #4e4e4e;
+  box-shadow: 3px 3px #4e4e4e;
+}
+
+.support_button:hover {
+  opacity: 0.7;
+  box-shadow: none;
+}
+
+/* .check_button
+------------------------------*/
+.check_button {
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  width: 170px;
+  height: 50px;
+  background-color: #ed91ed;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-color: #fff 2px solid;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.check_button a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.check_button:hover {
+  opacity: 0.7;
+}
+
+/* .recruit_button
+------------------------------*/
+.recruit_button {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  background-color: #fff;
+  color: #6f8d18;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.recruit_button a {
+  display: block;
+  color: #6f8d1b;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.recruit_button:hover {
+  opacity: 0.7;
+}
+
+/* button_right
+------------------------------*/
+.button_right {
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 170px;
+  background-color: #528852;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-color: #fff 2px solid;
+  border-radius: 15px 0px 0px 15px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.button_right a {
+  display: block;
+  color: #fff;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.button_right:hover {
+  opacity: 0.7;
+}
+
+/* scrollTop
+------------------------------*/
+
+.scrollTop {
+  width: 90px;
+  height: 70px;
+  background-image: url(../images/top_button.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 25px;
+  right: 100px;
+  z-index: 5;
+  padding-top: 20px;
+}
+
+
+.scrollTop:hover {
+  opacity: 0.7;
+}
